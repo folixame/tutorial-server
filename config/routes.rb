@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'calculator_rest/add/:a/:b' => 'calculator_rest#add'
+
+  get 'calculator_rest/subtract/:a/:b' => 'calculator_rest#subtract'
+
+  get 'calculator_rest/multiply/:a/:b' => 'calculator_rest#multiply'
+
+  get 'calculator_rest/divide/:a/:b' => 'calculator_rest#divide'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -54,5 +62,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  wash_out :calculator
+  wash_out :calculator_soap
 end

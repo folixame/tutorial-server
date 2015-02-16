@@ -1,4 +1,4 @@
-class CalculatorController < ApplicationController
+class CalculatorSoapController < ApplicationController
   soap_service namespace: 'urn:WashOut'
 
   # Add

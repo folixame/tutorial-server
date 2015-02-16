@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
+  get 'calculator_rest/' => 'calculator_rest#index'
+
   get 'calculator_rest/add/:a/:b' => 'calculator_rest#add'
 
   get 'calculator_rest/subtract/:a/:b' => 'calculator_rest#subtract'
@@ -11,7 +15,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
